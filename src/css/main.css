@@ -1,5 +1,5 @@
 html{
-    font-size: 62.5%
+    font-size: 62.5%;
     color:#222;
 }
 
@@ -148,16 +148,173 @@ header .top ul li a
     padding: 0 1.5rem;
     color: #fff;
 }
+
+header .main{
+    padding: 0;
+}
+header .main .brand
+{
+    float: left;
+    padding: 1rem 1.5rem;
+}
+header .main ul
+{
+    text-align: right;
+}
+header .main ul li
+{
+    display: inline-block;
+    border-left: 1px solid #f0ede9;
+}
+header .main ul li a
+{
+    display: inline-block;
+    padding: 0 3rem;
+    line-height: 5.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #7c7a65;
+    text-decoration: none;
+}
+
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active
+{
+    color: #ffb300;
+    background-color: #f8f6f1;
+}
 /*内容*/
 
 .container
 {
     width: 100%;
 }
+/*交易信息*/
+.transaction
+{
+    width: 100%;
+    background-color: #7c7365;
+}
 
+.trans-content
+{
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.trans-data
+{
+    float: left;
+    padding: 1rem;
+    text-align: left;
+}
+.trans-data span
+{
+    display: inline-block;
+    line-height: 3rem;
+    color: #fff;
+}
+.trans-data span.trans-money
+{
+    font-size: 2.2rem;
+    color: #ff9900;
+    letter-spacing: 3px;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.9);/*只让背景透明，内容不透明*/
+    box-shadow: 1px 2px 1px #333 inset;
+}
+.trans-report
+{
+    text-align: right;
+}
+.trans-report a
+{
+    display: inline-block;
+    padding: 1rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+/*滚动广告*/
+
+.ad
+{
+    display: none;
+}
+/*平台公告*/
+.feature
+{
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 0;
+}
+
+.feature .item
+{
+    display: inline-block;
+    width: calc(33.33333333333% - 3rem);
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+.feature .item + .item
+{
+    margin-left: 1.5rem;
+}
+.feature .item h3
+{
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    font-size: 3.3rem;
+    text-align: center;
+    color: #ff9900;
+}
+.feature .item p
+{
+    display: inline-block;
+    width: 55%
+    margin:0;
+    padding: 0;
+    color: #999;
+}
 /*底部*/
 
 footer
 {
     width: 100%;
+    padding: 3rem 0 5rem;
+    background-color: #ededed;
+}
+
+footer ul
+{
+    text-align: center;
+}
+footer ul li .icon
+{
+    display: inline-block;
+    text-indent: -999rem;
+    margin-right: 1.5rem;
+    background-size: 466px 447px;
+    overflow: hidden;
+}
+footer ul li .icon-1
+{
+    width: 38px;
+    height: 27px;
+    background-position: -369px -45px;
+}
+
+footer p
+{
+    text-align: center;
+    color: #999;
 }
