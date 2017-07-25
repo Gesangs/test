@@ -5,8 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie-edge">
     <title>个人网站</title>
     <meta name="viewport" content="width-devide,initial-scale=1">
+    <!-- build:css scripts/combined.css -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- endbuild -->
 </head>
 <body>
 
@@ -41,7 +45,7 @@
 </header>
 
 <div class="container">
-    <section class="transaction">
+    <section class="transaction clearfix">
         <div class="trans-content">
             <div class="trans-data">
                 <span>平台累计成交金额</span>
@@ -59,15 +63,30 @@
         </div>
     </section>
     <section class="ad">
-        <div class="item">
-            <img src="img/ad001.png" alt="">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <picture>
+                    <source srcset="img/ad001-l.png" media="(min-width: 50em)">
+                    <source srcset="img/ad001-m.png" media="(min-width: 30em)">
+                    <img src="img/ad001.png" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="img/ad002-l.png" media="(min-width: 50em)">
+                    <source srcset="img/ad002-m.png" media="(min-width: 30em)">
+                    <img src="img/ad002.png" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="img/ad003-l.png" media="(min-width: 50em)">
+                    <source srcset="img/ad003-m.png" media="(min-width: 30em)">
+                    <img src="img/ad003.png" alt="">
+                </picture>
+            </div>
         </div>
-        <div class="item">
-            <img src="img/ad002.png" alt="">
-        </div>
-        <div class="item">
-            <img src="img/ad003.png" alt="">
-        </div>
+
     </section>
     <section class="feature">
         <div class="item">
@@ -270,7 +289,11 @@
 </footer>
 
 
-
-
+<!-- build:js scripts/combined.js -->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/picturefill.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>

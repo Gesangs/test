@@ -58,7 +58,7 @@ li
 
 .text-hide
 {
-    font: 0/0 a;
+
     color: transparent;
     text-shadow: none;
     background-color: transparent;
@@ -385,10 +385,7 @@ header .main ul li a.active
 
 /*滚动广告*/
 
-.ad
-{
-    display: none;
-}
+
 /*平台公告*/
 .feature
 {
@@ -424,7 +421,7 @@ header .main ul li a.active
 .feature .item p
 {
     display: inline-block;
-    width: 55%
+    width: 55%;
     margin:0;
     padding: 0;
     color: #999;
@@ -437,8 +434,8 @@ header .main ul li a.active
     {
         display: block;
         width: 100%;
-        font-style: 2.6rem;
-        text-align:center;
+        font-size: 2.6rem;
+        text-align: center;
     }
     .feature .item p
     {
